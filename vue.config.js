@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-  ? '/dist/'
+  ? '/futurice/'
   : '/'
   /*
   called in main.js currently not required!
