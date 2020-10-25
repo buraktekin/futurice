@@ -1,0 +1,92 @@
+/** 
+* ===========
+* Scaffolding stylings 
+* ===========
+* @Naming convention: startswith hq-
+* @Purpose:
+*   Set baseline properties for HTML elements here.
+*   including: 
+*     - :root variables
+*     - font-family
+*     - font-size
+*     - element size (height & width)
+*     - color
+*     - spacing (margin & paddings)
+*     - display
+*     - animations
+*     - media-queries
+*/
+
+:root {
+  --height: 64px;
+  --theme-green: #42b983;
+  --theme-blue: #2f6fff;
+  --theme-orange: #db8119;
+  --theme-gray: #e8e8e8;
+}
+
+body {
+  background-color: rgb(228, 228, 228) !important;
+}
+
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: var(--theme-green) !important;
+  padding: 0 5px;
+}
+
+div.column, div.row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+div {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+// Animations
+@-webkit-keyframes signal {
+	from {opacity: 0.3;}
+	to {opacity: 1;}
+}
+
+@-moz-keyframes signal {
+	from {opacity: 0.3;}
+	to {opacity: 1;}
+}
+
+@-o-keyframes signal {
+	from {opacity: 0.3;}
+	to {opacity: 1;}
+}
+
+@keyframes signal {
+	from {opacity: 0.3;}
+	to {opacity: 1;}
+}
+
+.ripple {
+  -webkit-animation: signal 2s infinite alternate ease-in-out;
+	-moz-animation: signal 2s infinite alternate ease-in-out;
+	-ms-animation: signal 2s infinite alternate ease-in-out;
+	-o-animation: signal 2s infinite alternate ease-in-out;
+	animation: signal 2s infinite alternate ease-in-out;
+}
+
+// Media Queries

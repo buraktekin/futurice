@@ -1,0 +1,88 @@
+/** 
+* ===========
+* Heardquake stylings 
+* ===========
+* This project uses SemanticUI library as the 3rd party ui 
+* @Purpose:
+*   Modify 3rd party stylings by overriding theirs classes.
+*
+*/
+
+.ui.grid {
+  height: 100%;
+}
+
+.ui.segment {
+  border: none !important;
+}
+
+.ui.loading.segment {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+}
+
+.ui.loading.segment:before {
+  background: rgba(0, 0, 0, .5);
+  box-shadow: none;
+}
+
+.ui.list .list>.item a.header, .ui.list>.item a.header {
+  color: var(--theme-green) !important;
+  transition: all ease-in-out .6s;
+}
+
+.ui.form .fields {
+  margin: 0 !important;
+}
+
+.ui.checkbox label, .ui.checkbox+label {
+  color: #fff !important;
+}
+
+.ui.block {
+  margin-bottom: 0 !important;
+}
+
+[role="listitem"] {
+  margin: 20px 0;
+  padding: 5px;
+  text-align: center;
+}
+
+.ui.list .list > .item a.header,
+.ui.list > .item a.header {
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    color: var(--theme-orange) !important;
+  }
+}
+
+.inline.fields {
+  margin-bottom: 0px !important;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background-color: rgba(0, 0, 0, 0.836) !important;
+  color: var(--theme-green) !important;
+}
+
+/** 
+* Leaflet frequently updates so for better browser optimization
+* as it is described like below in MDN:
+*
+* @Source https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)
+* The will-change CSS property hints to browsers how an element
+* is expected to change. Browsers may set up optimizations before
+* an element is actually changed. These kinds of optimizations can 
+* increase the responsiveness of a page by doing potentially expensive
+* work before they are actually required.
+*/
+
+.leaflet-fade-anim .leaflet-tile,
+.leaflet-zoom-anim .leaflet-zoom-animated { 
+  will-change:auto !important; 
+}
