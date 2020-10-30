@@ -19,7 +19,7 @@ import L, { LatLng } from 'leaflet';
 export const ATTRIBUTION: string = '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
 export const MAP_OPTIONS: object = { zoomSnap: 0.5, zoomControl: false, attribution: ATTRIBUTION};
 export const TILE_OPTIONS: object = { minZoom: 2, maxZoom: 10, zoomOffset: 0 };
-export const URL: string = 'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png';
+export const URL: string = 'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png';
 export const ZOOM: number = 2.0;
 export const CENTER: LatLng = L.latLng(0, 0);
 
